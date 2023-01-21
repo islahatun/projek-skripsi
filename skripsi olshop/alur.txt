@@ -1,0 +1,205 @@
+Algoritma toko online 
+
+Mulai
+login admin {
+    masukkan data login admin :username,password 
+    if(data login admin = data admin){
+        admin berhasil login,
+        masuk ke halaman utama admin
+    }
+}
+input user{
+    kik menu user{
+        klik tombol tambah,
+        input data user:nama user,username,password,level user,
+        klik simpan{
+            if(data user lengkap){
+            data tersimpan
+        }else{
+            lengkapi data
+        }
+        }
+        if(edit){
+            klik tombol edit
+            input data user:nama user,username,password,level user,
+        klik simpan{
+            if(data user lengkap){
+            data terubah
+        }else{
+            lengkapi data
+        }
+        }
+        if(hapus){
+            klik tommbol hapus,
+            data terhapus
+        }
+    }
+}
+input data setting{
+    klik menu setting,
+    input data setting website,
+    klik simpan
+}
+input data banner{
+    klik menu banner,
+    input data banner: gambar banner,
+    klik simpan
+}
+input data kategori{
+    klik menu kategori,
+    klik tombol tambah,
+    input data kategori :nama kategori,
+    klik simpan{
+        if(data kategori lengkap){
+        data berhasil tersimpan
+    }else{
+        lengkapi data 
+    }
+    }
+    if(edit){
+        pilih data,
+            klik tombol edit
+            input data kategori :nama kategori,
+        klik simpan{
+            if(data user lengkap){
+            data terubah
+        }else{
+            lengkapi data
+        }
+        }
+        if(hapus){
+            pilih data,
+            klik tommbol hapus,
+            data terhapus
+        }
+    
+}
+input data ukuran barang{
+    klik menu ukuran barang,
+    klik tombol tambah,
+    input data ukuran barang: jenis ukuran, harga,
+    klik simpan,{
+        if(data ukuran barang lengkap){
+        data berhasil disimpan
+    } else{
+        lengkapi data
+    }
+    }
+    if(edit){
+        pilih data
+            klik tombol edit
+            input data ukuran barang: jenis ukuran, harga,
+        klik simpan{
+            if(data user lengkap){
+            data terubah
+        }else{
+            lengkapi data
+        }
+        }
+        if(hapus){
+            pilih data
+            klik tommbol hapus,
+            data terhapus
+        }
+}
+input data barang{
+    klik menu barang,
+    klik tombol tambah,
+    input data barang: nama barang, harga, berat, deskripsi barang, ukuran barang, gambar
+    klik simpan,{
+        if(data barang lengkap){
+        data berhasil disimpan
+    } else{
+        lengkapi data
+    }
+    }
+    
+    if(edit){
+        pilih data
+            klik tombol edit
+           input data barang: nama barang, harga, berat, deskripsi barang, ukuran barang, gambar
+        klik simpan{
+            if(data user lengkap){
+            data terubah
+        }else{
+            lengkapi data
+        }
+        }
+        if(hapus){
+            pilih data
+            klik tommbol hapus,
+            data terhapus
+        }
+}
+cetak laporan{
+    klik menu laporan,
+    pilih jenis laporan,
+    filter tanggal laporan,
+    cetak laporan
+}
+
+
+
+registrasi pelanggan {
+    memasukkan data_registrasi :nama_pelanggan,email,password,konfirmasi_password 
+    if(data_registrasi lengkap){
+        data berhasil terimpan
+    } else{
+        data harus dilengkapi
+    }
+}
+login pelanggan{
+    memasukan data_login: email,password 
+    if(data_login == data_registrasi){
+        pelanggan berhasil login,
+        masuk ke halaman utama
+    }else{
+        isi kembali data_login
+    }
+}
+transaksi pemesanan{
+    pilih barang 
+    if(klik add cart){
+        data ditambahkan kedalam keranjang
+    } else if (klik view){
+        menampilkan detail produk
+        klik add cart
+    }
+    klik cart 
+    klik view cart 
+    masukan jumlah pembelian dan ukuran baju 
+    klik update 
+    klik checkout 
+    masukan data pengiriman
+    klik proses checkout 
+    masuk ke pesanan saya 
+    klik bayar 
+    masuk ke halaman pembayaran 
+    mengisi data_pembayaran 
+    if(data_pembayaran lengkap){
+        pembayaran berhasil
+    }else{
+        lengkapi data pembayaran
+    }
+
+    Login sebagai admin 
+    periksa pesanan masuk{
+        cek bukti pembayaran, 
+        klik proses{
+            masuk ke halaman pesanan di proses,
+            klik kirim,
+            masukan nomor resi,
+            klik kirim
+        }
+    }
+
+   login pelanggan
+    periksa pesanan{
+        klik logo profil,
+        klik pesanan saya,
+        masuk ke halaman pesanan saya,
+        klik sub menu dikirim,
+        klik diterima
+    }
+    
+}
